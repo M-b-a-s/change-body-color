@@ -1,0 +1,62 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.color-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+span {
+  background: beige;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0.3rem solid #333;
+}
+
+span:hover {
+  transform: scale(0.8);
+}
+
+.color-2 {
+  background: coral;
+}
+.color-3 {
+  background: teal;
+}
+.color-4 {
+  background: slategrey;
+}
+
+.text {
+  color: #333;
+}
+
+@media screen and (max-width: 400px) {
+  span {
+    width: 2rem;
+    height: 2rem;
+    border: 0.17rem solid #333;
+  }
+
+  .text {
+    font-size: small;
+  }
+}
